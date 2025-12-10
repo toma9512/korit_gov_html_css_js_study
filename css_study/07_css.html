@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #container1 {
+                width: 1000px;
+                height: 500px;
+                background-color: beige;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            #container2 {
+                width: 1000px;
+                height: 150px;
+                background-color: burlywood;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            #container3 {
+                width: 1000px;
+                height: 350px;
+                background-color: rgb(233, 136, 71);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .box1 {
+                width: 430px;
+                height: 110px;
+                background-color: brown;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                box-sizing: border-box;
+                padding: 10px;
+                /* align-items: center; */
+            }
+            
+            .box1 > h4, p {
+                margin: 0px 0px 0px 0px;
+            }
+
+            .box2 {
+                width: 430px;
+                height: 150px;
+                background-color: rgb(187, 125, 9);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            #img {
+                width: 100px;
+                height: 100px;
+                background-color: purple;
+            }
+
+            #text {
+                width: 280px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container1">
+            <div id="container2">
+                <div class="box1">
+                    <h4>제목1</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At nobis dolore dignissimos, quibusdam debitis
+                        perspiciatis?
+                    </p>
+                </div>
+                <div class="box1">
+                    <h4>제목1</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At nobis dolore dignissimos, quibusdam debitis
+                        perspiciatis?
+                    </p>
+                </div>
+            </div>
+            <div id="container3">
+                <div class="box2">
+                    <div id="img">img</div>
+                    <div id="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Reiciendis consequuntur facilis architecto ullam
+                        aliquid nostrum dolores sit autem praesentium. Dolor
+                        cupiditate rerum similique ipsum minima,
+                    </div>
+                </div>
+                <div class="box2">
+                    <div id="img">img</div>
+                    <div id="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Reiciendis consequuntur facilis architecto ullam
+                        aliquid nostrum dolores sit autem praesentium. Dolor
+                        cupiditate rerum similique ipsum minima,
+                    </div>
+                </div>
+                <div class="box2">
+                    <div id="img">img</div>
+                    <div id="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Reiciendis consequuntur facilis architecto ullam
+                        aliquid nostrum dolores sit autem praesentium. Dolor
+                        cupiditate rerum similique ipsum minima,
+                    </div>
+                </div>
+                <div class="box2">
+                    <div id="img">img</div>
+                    <div id="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Reiciendis consequuntur facilis architecto ullam
+                        aliquid nostrum dolores sit autem praesentium. Dolor
+                        cupiditate rerum similique ipsum minima,
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS 자식 선택자</title>
+        <style>
+            #container {
+                border: 1px solid black;
+                padding: 5px 10px;
+                border-radius: 15px;
+            }
+
+            #container > p > span {
+                font-size: 18px;
+                color: orange;
+            }
+
+            #container > p:nth-child(2) {
+                border: 1px solid black;
+            }
+
+            #container > p:nth-child(3),
+            p:nth-child(4) {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>자식 선택자</h3>
+        <div id="container">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+                <span
+                    >incidunt nemo tempore impedit amet, repellat eligendi
+                    tempora</span
+                >
+                corporis eum? Dolor, aspernatur. Et id repudiandae in molestiae
+                eveniet deserunt ratione iusto?
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+                <span
+                    >incidunt nemo tempore impedit amet, repellat eligendi
+                    tempora</span
+                >
+                corporis eum? Dolor, aspernatur. Et id repudiandae in molestiae
+                eveniet deserunt ratione iusto?
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+                <span
+                    >incidunt nemo tempore impedit amet, repellat eligendi
+                    tempora</span
+                >
+                corporis eum? Dolor, aspernatur. Et id repudiandae in molestiae
+                eveniet deserunt ratione iusto?
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+                <span
+                    >incidunt nemo tempore impedit amet, repellat eligendi
+                    tempora</span
+                >
+                corporis eum? Dolor, aspernatur. Et id repudiandae in molestiae
+                eveniet deserunt ratione iusto?
+            </p>
+        </div>
+    </body>
+</html>
