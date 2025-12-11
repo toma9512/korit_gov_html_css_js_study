@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <style>
-            #container1 {
+            #container {
                 width: 1000px;
                 height: 500px;
                 background-color: beige;
@@ -15,7 +15,7 @@
                 align-items: center;
             }
 
-            #container2 {
+            #header_container {
                 width: 1000px;
                 height: 150px;
                 background-color: burlywood;
@@ -24,7 +24,7 @@
                 align-items: center;
             }
 
-            #container3 {
+            #main_container {
                 width: 1000px;
                 height: 350px;
                 background-color: rgb(233, 136, 71);
@@ -34,28 +34,24 @@
                 align-items: center;
             }
 
-            .box1 {
+            #header_container > div {
                 width: 430px;
                 height: 110px;
                 background-color: brown;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
                 box-sizing: border-box;
-                padding: 10px;
-                /* align-items: center; */
+                padding: 15px;
             }
             
-            .box1 > h4, p {
+            #header_container > div > h4, p {
                 margin: 0px 0px 0px 0px;
             }
 
-            .box2 {
+            .card {
                 width: 430px;
                 height: 150px;
                 background-color: rgb(187, 125, 9);
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 align-items: center;
             }
 
@@ -74,9 +70,9 @@
         </style>
     </head>
     <body>
-        <div id="container1">
-            <div id="container2">
-                <div class="box1">
+        <div id="container">
+            <div id="header_container">
+                <div>
                     <h4>제목1</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -84,7 +80,7 @@
                         perspiciatis?
                     </p>
                 </div>
-                <div class="box1">
+                <div>
                     <h4>제목1</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -93,8 +89,8 @@
                     </p>
                 </div>
             </div>
-            <div id="container3">
-                <div class="box2">
+            <div id="main_container">
+                <div class="card">
                     <div id="img">img</div>
                     <div id="text">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -103,7 +99,7 @@
                         cupiditate rerum similique ipsum minima,
                     </div>
                 </div>
-                <div class="box2">
+                <div class="card">
                     <div id="img">img</div>
                     <div id="text">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -112,7 +108,7 @@
                         cupiditate rerum similique ipsum minima,
                     </div>
                 </div>
-                <div class="box2">
+                <div class="card">
                     <div id="img">img</div>
                     <div id="text">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -121,7 +117,7 @@
                         cupiditate rerum similique ipsum minima,
                     </div>
                 </div>
-                <div class="box2">
+                <div class="card">
                     <div id="img">img</div>
                     <div id="text">
                         Lorem, ipsum dolor sit amet consectetur adipisicing

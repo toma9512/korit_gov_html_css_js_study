@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .doc_title {
+                padding: 50px 0px 0px;
+            }
+
+            .content-article {
+                width: 440px;
+                height: 491px;
+                padding: 0px 69px;
+                border: solid rgb(211, 211, 211);
+                margin: 40px 151px 30px 151px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .tit_service {
+                margin: 0;
+            }
+
+            .item_form {
+                width: 440px;
+                height: 50px;
+            }
+
+            #login_id {
+                width: 440px;
+                height: 45px;
+                border: none;
+                border-bottom: solid gray;
+            }
+
+            #login_pw {
+                width: 440px;
+                height: 45px;
+                border: none;
+                border-bottom: solid gray;
+            }
+
+            .set_login {
+                margin: 25px 0px 0px 0px;
+            }
+
+            .lab_choice {
+                font-size: 14px;
+            }
+
+            #checkbox {
+                border-radius: 100px;
+            }
+
+            .ico_check {
+                width: 20px;
+                height: 20px;
+                box-sizing: border-box;
+                border: solid;
+                border: 0;
+                margin: 0px 8px 0px 0px;
+            }
+
+            .confirm_btn {
+                height: 168px;
+                padding: 40px 0px 0px 0px;
+                display: flex;
+                box-sizing: border-box;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            input::placeholder {
+                font-size: 18px;
+            }
+
+            .btn_g {
+                width: 445px;
+                height: 50px;
+                border-radius: 4px;
+                border: 0px;
+                font-size: 16px;
+                color: white;
+                cursor: pointer;
+                background-color: rgb(83, 83, 83);
+            }
+
+            .btn_g:hover {
+                background-color: #242424;
+            }
+
+            .btn_g.highlight.submit {
+                background-color: #fee500;
+                color: #242424;
+            }
+
+            .btn_g.highlight.submit:hover {
+                background-color: #fbdd0d;
+            }
+
+            .line_or {
+                padding: 15px 0px;
+                font-size: 12px;
+            }
+
+            .info_user {
+                margin: 26px 0px 0px 0px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .info_user > a,
+            span > a {
+                font-size: 11px;
+            }
+
+            .doc_footer {
+                padding: 0px 0px 40px;
+                font-size: 13px;
+            }
+
+            .kc_txt_copy {
+                display: flex;
+                justify-content: center;
+                margin: 10px 0px 0px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="doc_title">
+                <h1 class="tit_service">
+                    <span>kakao</span>
+                </h1>
+            </div>
+            <article id="mainContent" class="content-article">
+                <form>
+                    <div class="item_form">
+                        <input
+                            type="text"
+                            id="login_id"
+                            placeholder="카카오메일 아이디, 이메일, 전화번호"
+                        />
+                    </div>
+                    <div class="item_form">
+                        <input
+                            type="text"
+                            id="login_pw"
+                            placeholder="비밀번호"
+                        />
+                    </div>
+                    <div class="set_login">
+                        <div class="item_choice">
+                            <input type="checkbox" id="checkbox" />
+                            <label class="lab_choice"
+                                >간편로그인 정보 저장</label
+                            >
+                        </div>
+                    </div>
+                    <div class="confirm_btn">
+                        <button class="btn_g highlight submit">로그인</button>
+                        <span class="line_or">
+                            <span>또는</span>
+                        </span>
+                        <button class="btn_g">QR코드 로그인</button>
+                    </div>
+                    <div class="info_user">
+                        <a href="link_join">회원가입</a>
+                        <span>
+                            <a href="link_user">계정 찾기</a>
+                            <a href="link_user">비밀번호 찾기</a>
+                        </span>
+                    </div>
+                </form>
+            </article>
+            <footer class="doc_footer">
+                <button type="button">한국어</button>
+                <a href="">이용약관</a>
+                <a href=""><strong>개인정보 처리방침</strong></a>
+                <a href="">고객센터</a>
+                <small class="kc_txt_copy">
+                    <a href="">KaKao Corp.</a>
+                </small>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Document</title>
+        <style>
+            #container {
+                width: 1000px;
+                height: 1000px;
+                background-color: beige;
+            }
+
+            #header_container {
+                width: 1000px;
+                height: 200px;
+                background-color: brown;
+            }
+
+            #main_container {
+                width: 1000px;
+                height: 800px;
+                background-color: rgb(255, 132, 0);
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            #search_container {
+                width: 1000px;
+                height: 100px;
+                background-color: aqua;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #search_container > div {
+                width: 700px;
+                height: 50px;
+                background-color: greenyellow;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #search_container > div > div {
+                width: 650px;
+                height: 45px;
+                background-color: white;
+                border: solid;
+            }
+
+            #nav_container {
+                width: 1000px;
+                height: 100px;
+                background-color: aquamarine;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #nav_container > div {
+                width: 700px;
+                height: 70px;
+                background-color: purple;
+                display: flex;
+                align-items: center;
+            }
+
+            #nav_container > div > ul {
+                width: 700px;
+                display: flex;
+                padding: 0;
+                margin: 0;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            #nav_container > div > ul > li {
+                width: 50px;
+                height: 50px;
+                background-color: grey;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #main {
+                width: 600px;
+                height: 750px;
+                background-color: skyblue;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            #aside {
+                width: 350px;
+                height: 750px;
+                background-color: greenyellow;
+            }
+
+            #section1 {
+                width: 550px;
+                height: 150px;
+                background-color: darkcyan;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            #section2 {
+                width: 550px;
+                height: 350px;
+                background-color: orangered;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            #section3 {
+                width: 550px;
+                height: 150px;
+                background-color: gray;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            #section1 > div {
+                width: 250px;
+                height: 130px;
+                background-color: aquamarine;
+            }
+
+            #section2 > div {
+                width: 250px;
+                height: 160px;
+                background-color: bisque;
+            }
+
+            #section3 > div {
+                width: 250px;
+                height: 130px;
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header_container">
+                <div id="search_container">
+                    <div id="box2">
+                        <div id="box3"></div>
+                    </div>
+                </div>
+                <div id="nav_container">
+                    <div id="box5">
+                        <ul>
+                            <li>블로그</li>
+                            <li>카페</li>
+                            <li>뉴스</li>
+                            <li>메일</li>
+                            <li>증권</li>
+                            <li>웹툰</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="main_container">
+                <div id="main">
+                    <div id="section1">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="section2">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="section3">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div id="aside"></div>
+            </div>
+        </div>
+    </body>
+</html>
