@@ -56,4 +56,30 @@ const students = [
     { name: "박길동", age: 23 },
     { name: "정길동", age: 18 },
 ];
-console.log(students.find((obj) => obj.name === "김길동" && obj.age == 31));
+
+console.log(
+    students.find((student) => student.name === "김길동" && student.age == 31)
+);
+
+console.log(names.includes("김길동"));
+console.log(names.includes("홍길동"));
+
+const numbers = [1, 2, 3, 4, 5];
+
+console.log(numbers.filter((num) => num % 2 == 0));
+console.log(numbers.filter((num) => num <= 3));
+
+console.log(students.filter((student) => student.age == 23));
+
+console.log(numbers.map((num) => num * 10));
+
+console.log(
+    students.map((student) => {
+        if (student.age == 23) {
+            return {
+                name: student.name,
+            };
+        }
+        return student;
+    })
+);
