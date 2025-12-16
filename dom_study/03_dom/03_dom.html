@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            input {
+                display: block;
+                margin: 3px 0px;
+            }
+
+            table {
+                margin: 3px 0px;
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                padding: 8px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #dbdbdb;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" class="name_input" placeholder="이름"/>
+        <input type="text" class="age_input" placeholder="나이"/>
+        <input type="text" class="address_input" placeholder="주소"/>
+        <button class="add_button">추가</button>
+
+        <table class="student_table">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>이름</th>
+                    <th>나이</th>
+                    <th>주소</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <script src="03_dom.js"></script>
+    </body>
+</html>
