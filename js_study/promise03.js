@@ -2,7 +2,7 @@
 function login(username) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (username !== undefined) {
+            if (username) {
                 console.log("로그인 성공")
                 resolve(username);
             } else {
@@ -16,7 +16,7 @@ function login(username) {
 function addToCart(product) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (product !== undefined) {
+            if (product) {
                 console.log(`${product} 장바구니 추가 성공`)
                 resolve(product);
             } else {
@@ -30,7 +30,7 @@ function addToCart(product) {
 function checkout(cardNumber, product) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (cardNumber !== undefined && product !== undefined) {
+            if (cardNumber && product) {
                 console.log(`${product} 결제 완료. 결제 카드: ${cardNumber}`)
                 resolve({cardNumber, product});
             } else {
@@ -47,11 +47,14 @@ const promise = login("홍길동")
     })
     .then((product) => {
         console.log(product);
-        return checkout("1234-5678-1234-5678", "아이폰");
+        return checkout("1234-5678-1234-5678", product);
     })
     .then(({cardNumber, product}) => {
         console.log(cardNumber, product);
     })
     .catch((error) => {
         console.log(error.message);
+    })
+    .finally(() => {
+        console.log("쇼핑몰 로그아웃")
     });

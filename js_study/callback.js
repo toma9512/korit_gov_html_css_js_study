@@ -29,7 +29,7 @@ function addToCart(product, callback) {
 }
 
 // 결제하기
-function checkOut(cardNumber, product, callback) {
+function checkout(cardNumber, product, callback) {
     setTimeout(() => {
         callback(cardNumber, product);
     }, 1000);
@@ -39,7 +39,7 @@ login("홍길동", (username) => {
     console.log(`${username}님이 로그인했습니다.`);
     addToCart("아이폰", (product) => {
         console.log(`${product}(이)가 장바구니에 추가되었습니다.`);
-        checkOut("1234-5678-1234-5678", product, (cardNumber, product) => {
+        checkout("1234-5678-1234-5678", product, (cardNumber, product) => {
             console.log(
                 `${product}에 대한 결제가 완료되었습니다. 카드번호: ${cardNumber}`
             );
