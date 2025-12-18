@@ -102,7 +102,29 @@ const productNamesPrices = products.map((product) => ({
 console.log(productNamesPrices);
 
 // 3.
-const discountProducts = products 
+const discountProducts = products
     .filter((product) => product.category == "전자제품")
     .map((product) => ({ name: product.name, price: product.price * 0.9 }));
 console.log(discountProducts);
+
+// =========================================================================================
+
+// const [value, setValue] = useState("");
+// value: 현재 상태, setValue: value를 바꿔주는 함수
+
+const useState = (data) => {
+    const dataState = {
+        data: data,
+        setData: (d) => {
+            console.log(d, "데이터 set");
+            dataState.data = d;
+        },
+    };
+
+    return [dataState.data, dataState.setData];
+};
+
+const [value, setValue] = useState(10); // value: 10으로 시작
+console.log(value);
+setValue(20);
+console.log(value);
